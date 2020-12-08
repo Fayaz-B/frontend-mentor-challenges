@@ -15,7 +15,7 @@ body{
 
 .left{
     width: 60%;
-    background-image: url(/frontend-challenge_3/images/bg-pattern-desktop.svg);
+    background-image: url(/frontend_challenge_3/images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 40px 40px;
@@ -34,7 +34,7 @@ body{
 }
 
 .bg-image{
-    background-image: url(/frontend-challenge_3/images/hero-desktop.jpg);
+    background-image: url(/frontend_challenge_3/images/hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
