@@ -3,7 +3,8 @@ const projects = [
     'frontend_challenge_3',
     'frontend_challenge_4',
     'frontend_challenge_5',
-    'frontend_challenge_6'
+    'frontend_challenge_6','frontend_challenge_7',
+    'frontend_challenge_8'
 ];
 
 const list = document.getElementById('list');
