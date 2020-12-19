@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    min-height: 100vh;
+}
+
+main{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+}
+
+.container>div:first-child{
+    flex: 0.7;
+    margin-right: 30px;
+}
+
+.container>div:last-child{
+    flex: 0.5;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: hsl(300, 69%, 71%);
+    color: #ffff;
+    transform: translateY(2px);
+}
+
+.footer{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer a{
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+}
+
+.footer a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer a:active{
+    background-color: hsl(300, 69%, 71%);
+    color: #ffff;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 1155px){
+
+    body{
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container>div:first-child{
+        flex: 1;
+        margin-right: 0;
+    }
+    
+    .container>div:last-child{
+        flex: 1;
+        margin-left: 0;
+    }
+
+    .footer{
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    button{
+        width: 300px;
+    }
+}
