@@ -4,7 +4,7 @@ const projects = [
     'frontend_challenge_4',
     'frontend_challenge_5',
     'frontend_challenge_6','frontend_challenge_7',
-    'frontend_challenge_8',
+    'frontend_challenge_8', 'frontend_challenge_9'
 
 ];
 
