@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.1rem;
+    color: hsl(243, 87%, 12%);
+}
+
+h1, h2, h5{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+}
+
+
+nav{
+    font-family: 'Raleway', sans-serif;
+}
+
+.head-2{
+    font-size: 2.1rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    min-height: 100vh;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+nav.flex{
+    justify-content: space-between;
+}
+
+.content{
+    padding: 40px 0;
+}
+
+
+header .content{
+    margin-top: 10%;
+}
+
+.content-left{
+    margin: auto 0;
+}
+
+.nav-list>li{
+    margin-left: 30px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+}
+
+.illustration-image{
+    width: 100%;
+}
+
+.content > div:first-child{
+    margin-right: 30px;
+}
+
+.content > div:last-child{
+    margin-left: 20px;
+    text-align: right;
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+input{
+    width: 60%;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 75%);
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.input-error{
+    border: 1.5px solid hsl(354, 100%, 66%);
+}
+
+.small{
+    position: absolute;
+    top: 40px;
+    color: hsl(354, 100%, 66%);
+}
+
+button{
+    width: 30%;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 20px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: #ffff;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.3);
+    cursor: pointer;
+}
+
+button:hover, .social-links li a:hover, .nav-list a:hover{
+    opacity: 0.9;
+}
+
+button:active, .social-links li a:active, .nav-list a:active{
+    opacity: 0.7;
+    transform: translateY(2px);
+}
+
+.info{
+    background-color: hsl(240, 75%, 98%);
+    position: relative;
+    top: 50px;
+}
+
+.info::before{
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-image: url(./images/bg-curve-desktop.svg);
+    position: absolute;
+    top: -99px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.green{
+    color: hsl(170, 45%, 43%);
+}
+
+.testimonial{
+    background-color: #ffff;
+    margin: 40px 0 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.1);
+    width: 80%;
+}
+
+.testimonial-content{
+    padding: 30px;
+}
+
+.testimonial p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.testimonial-profile img{
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+h5{
+    margin-bottom: -10px;
+}
+
+.testimonial-profile p{
+    font-size: 12px;
+}
+
+.sign-up{
+    background-color: hsl(238, 22%, 44%);
+}
+
+.sign-up-content{
+    margin: 70px 0 20px 0;
+    color: #ffff;
+}
+
+.content-right{
+    width: 100%;
+    text-align: left;
+
+}
+
+.content-right form{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.content-right input{
+    width: 80%;
+    justify-content: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.3);
+}
+
+.content-right button{
+    margin-left: 0;
+    margin-top: 30px;
+    width: 40%;
+    padding: 10px 10;
+
+}
+
+.footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #ffff;
+}
+
+.footer-flex{
+    justify-content: space-between;
+}
+
+.footer-flex li{
+    margin-bottom: 10px;
+}
+
+p>img{
+    margin-right: 10px;
+}
+
+.social-links li{
+    margin-left: 20px;
+}
+
+.social-links li a{
+    color: #ffff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ffff;
+    padding: 2px;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .head-2{
+        font-size: 1.5rem;
+    }
+
+    nav.flex, nav ul.flex {
+        flex-direction: row;
+    }
+    .flex {
+		flex-direction: column;
+	}
+	.flex > div {
+		width: 100%;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+	.flex > div:first-child {
+		margin-right: 0;
+	}
+	.flex > div:last-child {
+		margin-left: 0;
+    }
+    
+    .testimonial{
+        width: 100%;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .button-blue{
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .info::before{
+        height: 80px;
+        background-image: url(./images/bg-curve-mobile.svg);
+        left: 0;
+        top:-80px;
+    }
+    
+    .content{
+        padding: 10% 0;;
+    }
+
+    .info .content-left p, .testimonial{
+        text-align: left;
+    }
+
+    .content-right form{
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .content-right form button{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+
+    .footer-content {
+        text-align:left;
+    }
+
+    .footer-content .flex{
+        align-items: stretch;
+    }
+    
+    .social-links{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-links li{
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+}

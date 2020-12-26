@@ -4,7 +4,6 @@ const small = form.querySelector('small');
 
 form.addEventListener("submit", e => {
     e.preventDefault();
-    console.log(form);
     emailValue = email.value;
     if(!emailValue){
         showError('Email field cannot be blank');
