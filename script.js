@@ -4,7 +4,10 @@ const projects = [
     'frontend_challenge_4',
     'frontend_challenge_5',
     'frontend_challenge_6','frontend_challenge_7',
-    'frontend_challenge_8', 'frontend_challenge_9'
+    'frontend_challenge_8', 'frontend_challenge_9',
+    'frontend_challenge_10',
+    'frontend_challenge_11',
+    'frontend_challenge_12'
 
 ];
 
@@ -24,5 +27,6 @@ projects.forEach(element => {
 });
 
 function nameFormat(name){
-    return name.split('_').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+    newName = name.split('_').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+    return newName.replace('Challenges', 'Projects');
 }
