@@ -27,6 +27,9 @@ projects.forEach(element => {
 });
 
 function nameFormat(name){
-    newName = name.split('_').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
-    return newName.replace('Challenges', 'Projects');
+    let newName = name.split('_').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+    return newName.replace('Challenge', 'Project');
 }
+
+console.log(nameFormat('Frontend Challenge 1'));
+nameFormat('Frontend Challenge 1');
