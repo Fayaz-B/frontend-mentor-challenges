@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div id="overlay" class="overlay">
+    <div class="rules-container">
+      <div class="flex">
+        <h1>rules</h1>
+        <div class="desk-close">
+          <button class="close"><img src="./images/icon-close.svg" alt="close"></button>
+        </div>
+      </div>
+      <img src="./images/image-rules.svg" alt="">
+      <div class="mobile-close">
+        <button class="close">
+          <img src="./images/icon-close.svg" alt="close">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="title-board flex">
+        <div>
+          <h1>
+            Rock
+          </h1>
+          <h1>
+            Paper
+          </h1>
+          <h1>
+            Scissors
+          </h1>
+        </div>
+
+        <div class="score-board">
+          <h4>
+            score
+          </h4>
+          <p id='score' class="score big-text">0</p>
+        </div>
+      </div>
+
+      <section id="game" class="game flex">
+        <div class="paper-circle circle">
+          <button class="user-option"  data-type="paper">
+            <img src="./images/icon-paper.svg" alt="paper">
+          </button>
+        </div>  
+
+        <div class="scissors-circle circle">
+          <button class="user-option"  data-type="scissors">
+            <img src="./images/icon-scissors.svg" alt="">
+          </button>
+        </div>
+
+        <div class="rock-circle circle">
+          <button  class="user-option" data-type="rock">
+            <img src="./images/icon-rock.svg" alt="rock">
+          </button>
+        </div>
+
+      </section>
+    </div>
+    <div class="container big-contianer">
+
+    </div>
+    <section id="result" class="results flex">
+      <div class="select">
+        <h2>you picked</h2>
+        <div id='user-select' class="paper-circle circle">
+          <button>
+            <img >
+          </button>
+        </div>  
+      </div>
+
+      <div class="result-text">
+        <p id="result-text" class="big-text">
+        </p>
+          <button id='reset' class="btn btn-result"> play again</button>
+      </div>
+
+      <div  class=" select">
+        <h2>the house picked</h2>
+        <div id='house-select' class="house circle">
+          <span id="house-img">
+            <button>
+              <img >
+            </button>
+          </span>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="rules">
+      <button id="rules" class="btn" id="#rules">
+        rules
+      </button>
+    </div>
+  </main>
+</body>
+</html>
